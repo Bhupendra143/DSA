@@ -19,12 +19,15 @@
 		printf("\n The stack is Full");
 		exit(0);
 		}
-	else
-	{
+		else
+		{
 		printf("\n Enter the Element to be Inserted= ");
 		scanf("%d",&item);
 		pu->stack [++pu->top]=item;
-	}
+		
+		//top=top+1; // -1+1=0
+		//pu->stack[top]=item;
+		}
 	
  }
  
@@ -40,6 +43,9 @@
 	else
 	{
 		item=po->stack[po->top--];
+		
+		//item=po->stack[top];
+		//top=top-1;
 		printf("\n The Deleted Element is=%d",item);	
 		
 	}
